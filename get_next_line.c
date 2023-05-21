@@ -6,7 +6,7 @@
 /*   By: groman-l <groman-l@student.42barcelona.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/05/09 17:57:27 by groman-l          #+#    #+#             */
-/*   Updated: 2023/05/19 19:11:11 by groman-l         ###   ########.fr       */
+/*   Updated: 2023/05/21 17:25:29 by groman-l         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,7 +49,7 @@ char	*next_buffer(char *s1)
 		i++;
 	if (!s1[i])
 		return (double_free (&s1, NULL));
-	new_buffer = ft_calloc (ft_strlen(s1) - i + 1, sizeof(char));
+	new_buffer = ft_calloc (ft_strlen(s1) - i, sizeof(char));
 	if (!new_buffer)
 		return (double_free (&s1, NULL));
 	i++;
